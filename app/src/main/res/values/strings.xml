@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CarMarket</string>
+    <string name="prompt">Zgjedh Llojin</string>
+    <string-array name="lloji_array">
+        <item>Sedan</item>
+        <item>Pickup</item>
+        <item>Kamion</item>
+        <item>Motor</item>
+    </string-array>
+</resources>

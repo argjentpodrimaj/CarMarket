@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "471692524024",
+    "firebase_url": "https://carmarketfinal.firebaseio.com",
+    "project_id": "carmarketfinal",
+    "storage_bucket": "carmarketfinal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471692524024:android:5cf3339d82451edb",
+        "android_client_info": {
+          "package_name": "com.example.acer.carmarketfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471692524024-kvkvn6sn9e59tlqnja616nvofcn1jv0e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.acer.carmarketfinal",
+            "certificate_hash": "85b434fe91990ec55f8a7e699f7aba8759beff52"
+          }
+        },
+        {
+          "client_id": "471692524024-8ib3pt7hq8id5vsdo3gt31cnhvquvv1j.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "471692524024-8ib3pt7hq8id5vsdo3gt31cnhvquvv1j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLB3MLbBH_1NkZVZwORzHK581RVU1o56Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471692524024-8ib3pt7hq8id5vsdo3gt31cnhvquvv1j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

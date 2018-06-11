@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".activities.MainActivity">
+
+    <TableLayout
+        android:id="@+id/tl_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+
+        <TableRow>
+
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:hint="search"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#FFffda"/>
+
+            <ImageView
+                android:id="@+id/ivClickSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_search_button"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tl_regjistrohu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tl_search"
+        android:layout_alignParentRight="true">
+
+
+        <TableRow>
+
+         <Button
+             android:id="@+id/btnLogout"
+             android:text="Logout"
+             android:visibility="invisible"
+             android:background="@drawable/button_background"
+             android:textColor="#FFFFFF"
+             />
+
+        <Button android:text="Regjistrohu"
+            android:id="@+id/btnRegister"
+            android:onClick="Regjistrohu"
+            android:background="@drawable/button_background"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btnKycu"
+                android:text="Kycu"
+                android:onClick="Kycu"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF"/>
+        </TableRow>
+
+
+
+    </TableLayout>
+
+
+    <TableLayout
+        android:id="@+id/tl_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tl_regjistrohu">
+
+
+        <TableRow
+            android:layout_marginTop="25dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginHorizontal="15dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_search_sport_car"
+                android:onClick="KerkoSedan"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Veturat"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginHorizontal="15dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_search_family_car"
+                    android:onClick="KerkoPickup"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pickup"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginHorizontal="15dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_search_truck"
+                    android:onClick="KerkoKamion"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kamion"/>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginHorizontal="15dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_search_motor"
+                    android:onClick="KerkoMotor"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Motor"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginHorizontal="15dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_search_parts"
+                    android:onClick="KerkoPjese"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Auto Pjese"/>
+
+            </LinearLayout>
+        </TableRow>
+
+
+
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/tl_main"
+        android:layout_marginTop="30dp">
+
+        <Button android:text="Krijo Shpallje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="KrijoShpallje"
+            android:background="@drawable/button_background"
+            android:layout_marginHorizontal="45dp"
+            android:textColor="#FFFFFF"/>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tl_icons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TableRow android:gravity="center">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/benz" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/audi" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/bmw" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/vw" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/opel" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/peugeot" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/chevy" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/toyota" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/volvo" />
+
+
+        </TableRow>
+
+    </TableLayout>
+    <TextView
+        android:id="@+id/tvCurrentUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tl_icons"
+        android:layout_alignParentRight="true"
+        android:textColor="#FFFFFF"/>
+
+    <ImageView
+        android:id="@+id/btnSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_account_setting"
+        android:layout_above="@id/tvCurrentUser"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        />
+
+
+</RelativeLayout>
