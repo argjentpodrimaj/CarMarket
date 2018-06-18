@@ -6,5 +6,6 @@
         <item>Pickup</item>
         <item>Kamion</item>
         <item>Motor</item>
+        <item>Pjese</item>
     </string-array>
 </resources>
