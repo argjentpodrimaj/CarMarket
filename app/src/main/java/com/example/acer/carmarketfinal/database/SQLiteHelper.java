@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteStatement;
 
-import com.example.acer.carmarketfinal.beans.Perdoruesi;
+//import com.example.acer.carmarketfinal.beans.Perdoruesi;
 import com.example.acer.carmarketfinal.beans.Vetura;
 
 public class SQLiteHelper extends SQLiteOpenHelper {
@@ -44,7 +44,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
     }
 
-    public void insertPerdorues(Perdoruesi perdoruesi){
+/*    public void insertPerdorues(Perdoruesi perdoruesi){
         SQLiteDatabase database = getWritableDatabase();
         String sql = "INSERT INTO PERDORUESI VALUES (null, ?, ?, ?, ?)";
         SQLiteStatement statement = database.compileStatement(sql);
@@ -88,7 +88,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         return password;
     }
 
-
+*/
 
     public Cursor getData(String sql){
         SQLiteDatabase database = getReadableDatabase();

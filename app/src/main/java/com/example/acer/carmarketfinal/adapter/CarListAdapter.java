@@ -57,7 +57,7 @@ public class CarListAdapter extends BaseAdapter {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             row = inflater.inflate(R.layout.activity_custom_search_list, null);
 
-            holder.txtTitulli = (TextView) row.findViewById(R.id.tvTitulli);
+            holder.txtTitulli = (TextView) row.findViewById(R.id.tvTitulli);//hiolder kals qqe i man qato variabla
             holder.txtPershkrimi = (TextView) row.findViewById(R.id.tvPershkrimi);
             holder.imageView = (ImageView) row.findViewById(R.id.ivFoto);
             row.setTag(holder);
