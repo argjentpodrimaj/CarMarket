@@ -53,8 +53,7 @@ public class ListViewCars extends AppCompatActivity {
         try {
 
             if(tipi.equals("search")){
-                cursor = sqLiteHelper.getData("Select * from VETURA where titulli like '"
-                        + search +"%'");
+                cursor = sqLiteHelper.getData("Select * from VETURA where titulli like '" + search +"%'");
             }else{
                 cursor = sqLiteHelper.getData("Select * from VETURA where lloji like '" + tipi + "'");
             }
